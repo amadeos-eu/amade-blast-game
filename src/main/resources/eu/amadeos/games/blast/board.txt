@@ -1,0 +1,33 @@
+# The arena of Blast, read at start: change it without compiling.
+#
+# One "row" line per row of tiles, a letter per tile:
+#   X wall, which no flame breaks   + always a crate   _ always free floor
+#   . floor, and a crate by chance (see "crates")
+# The corners are kept free, so that every player can lay a first bomb and get round a corner.
+#
+# Then where the four players start, in column and row (0, 0 is the top left); the chance of a crate
+# on a "."; and how many of each power-up are hidden in the crates.
+
+row XXXXXXXXXXXXXXX
+row X__.........__X
+row X_X.X.X.X.X.X_X
+row X.............X
+row X.X.X.X.X.X.X.X
+row X.............X
+row X.X.X.X+X.X.X.X
+row X.............X
+row X.X.X.X.X.X.X.X
+row X.............X
+row X_X.X.X.X.X.X_X
+row X__.........__X
+row XXXXXXXXXXXXXXX
+
+start 1 1
+start 13 11
+start 13 1
+start 1 11
+
+crates 0.8
+hide bomb 10
+hide fire 10
+hide speed 6
