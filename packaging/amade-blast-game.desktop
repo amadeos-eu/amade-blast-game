@@ -1,0 +1,24 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=amadeOS Blast
+Name[de]=amadeOS Blast
+Name[fr]=amadeOS Blast
+Name[es]=amadeOS Blast
+Name[it]=amadeOS Blast
+GenericName=Bomb Arena Game
+GenericName[de]=Bomben-Arenaspiel
+GenericName[fr]=Jeu d'arène à bombes
+GenericName[es]=Juego de arena con bombas
+GenericName[it]=Gioco di arena con bombe
+Comment=Lay bombs, blast the crates and be the last one standing, up to four players
+Comment[de]=Legen Sie Bomben, sprengen Sie die Kisten und bleiben Sie als Letzter stehen, bis zu vier Spieler
+Comment[fr]=Posez des bombes, faites sauter les caisses et soyez le dernier debout, jusqu'à quatre joueurs
+Comment[es]=Ponga bombas, vuele las cajas y sea el último en pie, hasta cuatro jugadores
+Comment[it]=Piazza bombe, fai saltare le casse e resta l'ultimo in piedi, fino a quattro giocatori
+Icon=amade-blast-game
+Exec=/usr/bin/amade-blast-game
+Terminal=false
+Categories=Game;ArcadeGame;
+Keywords=bombs;arena;crates;multiplayer;gamepad;arcade;game;
+StartupNotify=true
