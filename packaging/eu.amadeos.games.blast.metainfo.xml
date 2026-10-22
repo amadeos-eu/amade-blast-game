@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AppStream metadata of amade-blast-game, installed as /usr/share/metainfo/eu.amadeos.games.blast.metainfo.xml.
+     amadeOS Software shows it for the installed package; a repository's appstream-generator reads it too. -->
+<component type="desktop-application">
+  <id>eu.amadeos.games.blast</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>EUPL-1.2</project_license>
+
+  <name>amadeOS Blast</name>
+
+  <summary>Lay bombs, blast the crates and be the last one standing, up to four players</summary>
+  <summary xml:lang="de">Bomben legen, Kisten sprengen und als Letzter übrig bleiben, bis zu vier Spieler</summary>
+  <summary xml:lang="fr">Posez des bombes, faites sauter les caisses et soyez le dernier debout, jusqu'à quatre joueurs</summary>
+  <summary xml:lang="es">Ponga bombas, vuele las cajas y sea el último en pie, hasta cuatro jugadores</summary>
+  <summary xml:lang="it">Piazza bombe, fai saltare le casse e resta l'ultimo in piedi, fino a quattro giocatori</summary>
+
+  <description>
+    <p>The bomb arena: up to four players lay bombs among crates, blast their way through and try to be the last one standing. On the keyboard and on gamepads; the computer takes the empty seats.</p>
+    <p xml:lang="de">Die Bombenarena: Bis zu vier Spieler legen Bomben zwischen Kisten, sprengen sich den Weg frei und versuchen, als Letzter übrig zu bleiben. Mit Tastatur und Gamepads; der Computer besetzt die freien Plätze.</p>
+    <p xml:lang="fr">L'arène à bombes : jusqu'à quatre joueurs posent des bombes entre les caisses, se frayent un chemin et tentent d'être le dernier debout. Au clavier et à la manette ; l'ordinateur prend les places libres.</p>
+    <p xml:lang="es">La arena de bombas: hasta cuatro jugadores ponen bombas entre cajas, se abren paso y tratan de ser el último en pie. Con teclado y mandos; el ordenador ocupa los puestos libres.</p>
+    <p xml:lang="it">L'arena delle bombe: fino a quattro giocatori piazzano bombe tra le casse, si aprono la strada e cercano di restare gli ultimi in piedi. Con tastiera e gamepad; il computer occupa i posti liberi.</p>
+    <ul>
+      <li>Power-ups: more bombs, longer flames, faster feet</li>
+      <li xml:lang="de">Extras: mehr Bomben, längere Flammen, schnellere Füße</li>
+      <li xml:lang="fr">Bonus : plus de bombes, flammes plus longues, pieds plus rapides</li>
+      <li xml:lang="es">Potenciadores: más bombas, llamas más largas, pies más rápidos</li>
+      <li xml:lang="it">Potenziamenti: più bombe, fiamme più lunghe, piedi più veloci</li>
+      <li>Two players on one keyboard, more with gamepads</li>
+      <li xml:lang="de">Zwei Spieler an einer Tastatur, mehr mit Gamepads</li>
+      <li xml:lang="fr">Deux joueurs sur un clavier, plus avec des manettes</li>
+      <li xml:lang="es">Dos jugadores en un teclado, más con mandos</li>
+      <li xml:lang="it">Due giocatori su una tastiera, di più con i gamepad</li>
+      <li>Computer players in the empty seats</li>
+      <li xml:lang="de">Computerspieler auf den freien Plätzen</li>
+      <li xml:lang="fr">Des joueurs ordinateur aux places libres</li>
+      <li xml:lang="es">Jugadores del ordenador en los puestos libres</li>
+      <li xml:lang="it">Giocatori del computer nei posti liberi</li>
+      <li>Built on amade-game-engine; plays on other operating systems as well</li>
+      <li xml:lang="de">Gebaut auf amade-game-engine; läuft auch auf anderen Betriebssystemen</li>
+      <li xml:lang="fr">Construit sur amade-game-engine ; fonctionne aussi sur d'autres systèmes d'exploitation</li>
+      <li xml:lang="es">Hecho con amade-game-engine; funciona también en otros sistemas operativos</li>
+      <li xml:lang="it">Costruito su amade-game-engine; funziona anche su altri sistemi operativi</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">amade-blast-game.desktop</launchable>
+  <icon type="stock">amade-blast-game</icon>
+  <categories>
+    <category>Game</category>
+    <category>ArcadeGame</category>
+  </categories>
+
+  <url type="homepage">https://github.com/datazuul/amade-blast-game</url>
+  <url type="bugtracker">https://github.com/datazuul/amade-blast-game/issues</url>
+  <developer id="eu.amadeos">
+    <name>amadeOS Project</name>
+  </developer>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>A round with three computer players</caption>
+      <caption xml:lang="de">Eine Runde mit drei Computerspielern</caption>
+      <caption xml:lang="fr">Une manche avec trois joueurs ordinateur</caption>
+      <caption xml:lang="es">Una ronda con tres jugadores del ordenador</caption>
+      <caption xml:lang="it">Un round con tre giocatori del computer</caption>
+      <image>https://raw.githubusercontent.com/datazuul/amade-blast-game/main/docs/screenshots/amade-blast-game.png</image>
+    </screenshot>
+  </screenshots>
+
+  <provides>
+    <binary>amade-blast-game</binary>
+  </provides>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">mild</content_attribute>
+  </content_rating>
+</component>

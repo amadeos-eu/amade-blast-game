@@ -97,6 +97,12 @@ exec /usr/bin/java -jar /opt/amade-blast-game/amade-blast-game.jar "\$@"
             from 'packaging/amade-blast-game.desktop'
             into appDir
         }
+        // AppStream metadata: name, description and screenshot for amadeOS Software (and a repository's
+        // appstream-generator).
+        copy {
+            from 'packaging/eu.amadeos.games.blast.metainfo.xml'
+            into new File(stagingDir, "usr/share/metainfo")
+        }
         copy {
             from 'src/main/resources/icons/amade-blast-game.png'
             into iconDir
