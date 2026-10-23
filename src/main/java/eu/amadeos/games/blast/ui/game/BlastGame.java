@@ -280,6 +280,7 @@ public final class BlastGame implements Arena {
                 scenes.replace(new TitleScene());
                 return;
             }
+            for (int i = 0; i < chosen.length; i++) if (chosen[i] != null && chosen[i].missing()) chosen[i] = null;
             if (keys.wasPressed(Key.COMPUTERS)) {
                 computers = !computers;
                 settings.setComputers(computers);
@@ -421,7 +422,10 @@ public final class BlastGame implements Arena {
         }
     }
 
-    /** Drawn over the frozen match until P, Enter, Space or Start; a missing gamepad must come back first. */
+    /**
+     * Drawn over the frozen match until P, Enter, Space or Start; a missing gamepad must come back first, or
+     * Esc leaves the match for the lobby, so the keyboard is never stuck behind a pad that is gone.
+     */
     final class PauseScene implements Scene {
         private final Seat missing;
 
@@ -431,7 +435,13 @@ public final class BlastGame implements Arena {
 
         @Override
         public void update(double seconds) {
-            if (missing != null && missing.missing()) return;
+            if (missing != null && missing.missing()) {
+                if (keys.wasPressed(Key.BACK)) {
+                    scenes.pop();
+                    scenes.replace(new LobbyScene());
+                }
+                return;
+            }
             boolean go = keys.wasPressed(Key.PAUSE) || keys.wasPressed(Key.CONTINUE);
             for (Seat input : inputs) go |= input.kind == Seat.Kind.PAD && input.pressed(Action.PAUSE);
             if (go) scenes.pop();
@@ -447,6 +457,7 @@ public final class BlastGame implements Arena {
             hud.text(g, msg.get("pause.title"), 190, 40, true, Hud.CHALK);
             if (missing != null && missing.missing()) {
                 hud.text(g, msg.format("pause.pad", missing.number), 235, 18, false, Hud.RED);
+                hud.text(g, msg.get("pause.leave"), 265, 13, false, Hud.CHALK);
             } else {
                 hud.text(g, msg.get("pause.continue"), 235, 18, false, Hud.CHALK);
             }

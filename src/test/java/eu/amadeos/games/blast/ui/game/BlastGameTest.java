@@ -148,6 +148,26 @@ class BlastGameTest {
     // --8<-- [end:test-unplugged]
 
     @Test
+    void escapeLeavesAMatchWhosePadIsGoneAndFreesItsSeat() {
+        Gamepad pad = gamepads.pad(0);
+        pad.connect("Test pad");
+        steps(1);
+        tap(pad, Gamepad.Button.A);
+        tap(KeyEvent.VK_SPACE);
+        tap(pad, Gamepad.Button.A);
+        assertInstanceOf(BlastGame.PlayScene.class, game.top());
+        pad.disconnect();
+        steps(2);
+        assertEquals(2, game.sceneCount(), "paused");
+        tap(KeyEvent.VK_ESCAPE);
+        assertInstanceOf(BlastGame.LobbyScene.class, game.top());
+        assertEquals(1, game.sceneCount());
+        tap(KeyEvent.VK_SPACE);
+        BlastGame.PlayScene play = assertInstanceOf(BlastGame.PlayScene.class, game.top(), "keys play alone");
+        assertEquals(Seat.Kind.KEYS, play.seats().get(1).kind);
+    }
+
+    @Test
     void pFreezesTheMatchAndEnterContinuesIt() {
         tap(KeyEvent.VK_SPACE);
         tap(KeyEvent.VK_SPACE);
