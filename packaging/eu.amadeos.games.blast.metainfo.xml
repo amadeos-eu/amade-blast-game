@@ -51,8 +51,8 @@
     <category>ArcadeGame</category>
   </categories>
 
-  <url type="homepage">https://github.com/datazuul/amade-blast-game</url>
-  <url type="bugtracker">https://github.com/datazuul/amade-blast-game/issues</url>
+  <url type="homepage">https://github.com/amadeos-eu/amade-blast-game</url>
+  <url type="bugtracker">https://github.com/amadeos-eu/amade-blast-game/issues</url>
   <developer id="eu.amadeos">
     <name>amadeOS Project</name>
   </developer>
@@ -64,7 +64,7 @@
       <caption xml:lang="fr">Une manche avec trois joueurs ordinateur</caption>
       <caption xml:lang="es">Una ronda con tres jugadores del ordenador</caption>
       <caption xml:lang="it">Un round con tre giocatori del computer</caption>
-      <image>https://raw.githubusercontent.com/datazuul/amade-blast-game/main/docs/screenshots/amade-blast-game.png</image>
+      <image>https://raw.githubusercontent.com/amadeos-eu/amade-blast-game/main/docs/screenshots/amade-blast-game.png</image>
     </screenshot>
   </screenshots>
 
