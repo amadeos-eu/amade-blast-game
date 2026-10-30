@@ -73,7 +73,7 @@ With `../amade-game-engine` (and `../amade-commons`) checked out next to this re
 
 From the engine: `Gamepads` and `Gamepad`, `Timers`, `EventQueue`, `TileMap`, `Walker` and `Direction`, `DistanceMap`, `TextData`, `GameLoop`, `GameCanvas`, `Sprite`, `Particles`, `SeededRandom`, `Ticker`, `Sound`, `Tune` and `Mixer`, `Keyboard` and `Controls`, `SceneStack`, `FullScreen`.
 
-Comments of the form `// --8<-- [start:name]` mark the excerpts the [Game Developer's Handbook](https://datazuul.github.io/amade-game-engine/) quotes; chapter 26 is about this game.
+Comments of the form `// --8<-- [start:name]` mark the excerpts the [Game Developer's Handbook](https://docs.amadeos.eu/amade-game-engine/) quotes; chapter 26 is about this game.
 
 ## Licence
 
