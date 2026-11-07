@@ -5,6 +5,8 @@
 ![License](https://img.shields.io/badge/license-EUPL--1.2-blue)
 ![Java](https://img.shields.io/badge/Java-25-orange)
 
+![Blast](docs/screenshots/amade-blast-game.png)
+
 ## Playing
 
 - **Space**, **Enter** or button **A** on a gamepad opens the lobby. Everybody who wants to play presses their bomb key or button once to take a seat, and once more to start. **C** switches the computer players in the empty seats on or off; without them two people are needed.
